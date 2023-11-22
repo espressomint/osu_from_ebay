@@ -69,7 +69,7 @@ document.addEventListener("click", event => {
         misses++;
         missesCounter.innerHTML = misses;
         if (misses >= maxMisses) {
-            alert("Game Over! Your final score is Combo: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
+            alert("Your final score is Combo: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
             endGame();
             updateAccuracy();
         }
@@ -82,7 +82,7 @@ const startTimer = () => {
 
     const timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
-            alert("Game Over! Your final score is Combo: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
+            alert("Your final score is Combo: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
             location.reload();
         }
         updateTimer();
