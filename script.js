@@ -24,8 +24,8 @@ document.addEventListener("mousedown", function (event) {
 const randomizeHitpointLocation = () => {
 
 
-    const containerWidth = 1000; 
-    const containerHeight = 850; 
+    const containerWidth = 660; 
+    const containerHeight = 700; 
 
     const hitpointWidth =100; 
     const hitpointHeight = 100; 
@@ -69,7 +69,7 @@ document.addEventListener("click", event => {
         misses++;
         missesCounter.innerHTML = misses;
         if (misses >= maxMisses) {
-            alert("Your final score is Combo: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
+            alert("Your final score is: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
             endGame();
             updateAccuracy();
         }
@@ -82,7 +82,7 @@ const startTimer = () => {
 
     const timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
-            alert("Your final score is Combo: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
+            alert("Your final score is: " + combo + " - Accuracy: " + accuracyMath.innerHTML);
             location.reload();
         }
         updateTimer();
